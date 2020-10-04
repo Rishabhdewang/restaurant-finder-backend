@@ -7,6 +7,7 @@ const { Model } = require("objection");
 const Knex = require("knex");
 const knexconfig = require('./knexfile');
 const cors = require("cors");
+const path = require('path')
 
 const { Pool } = require('pg');
 const pool = new Pool({
@@ -28,10 +29,11 @@ app.use(express.static(path.join(__dirname, 'public')))
 // import routes
 app.use("/rest",router)
 
-if(process.env.NODE_ENV = "production") {
+// if(process.env.NODE_ENV = "production") {
 
-}
+// }
 
 app.listen(PORT , () => {
     console.log("Listening on port :", +PORT);
+    console.log(process.env.DATABASE_URL);
 })
