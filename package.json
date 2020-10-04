@@ -4,14 +4,14 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rishabhdewang/Restraunt-Finder.git"
   },
-  "author": "",
+  "author": "Rishabh Dewang",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rishabhdewang/Restraunt-Finder/issues"
