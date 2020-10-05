@@ -1,6 +1,6 @@
 
 exports.up = function(knex) { 
-    return knex.schema.alterTable("restaurants" , (t1) => {
+    return knex.schema.createTable("restaurants" , (t1) => {
         t1.increments("id").primary();
         t1.string("Name").notNullable().unique();
         t1.string("Location").notNullable();
