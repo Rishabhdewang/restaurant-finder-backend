@@ -9,13 +9,6 @@ const knexconfig = require('./knexfile');
 const cors = require("cors");
 const path = require('path')
 
-const { Pool } = require('pg');
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-  ssl: {
-    rejectUnauthorized: false
-  }
-});
 
 //initialization
 const knex = Knex(knexconfig[process.env.NODE_ENV || 'development']);
